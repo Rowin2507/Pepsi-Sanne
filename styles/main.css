@@ -1,0 +1,126 @@
+/* VARIABLES -------------------------------- */
+/* VARIABLES -------------------------------- */
+:root {
+     --pepsi-bottle: 500;
+
+    --color-white: #FFFFFF;
+    --color-lightgray: #eeeded;
+    --color-black: #000000;
+    --color-dark: #0d1010;
+}
+
+
+
+/* RESET -------------------------------- */
+/* RESET -------------------------------- */
+*, *::after, *::before {
+  box-sizing:border-box;  
+  outline: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* GENERAL STYLING -------------------------------- */
+/* GENERAL STYLING -------------------------------- */
+body > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: calc(var(--pepsi-bottle) * 1px);
+    width: auto;
+
+    display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.not-visible {
+    position: absolute;
+    opacity: 0;
+    z-index: -999;
+    pointer-events: none;
+}
+
+
+
+/* PEPSI BOTTLE -------------------------------- */
+/* PEPSI BOTTLE -------------------------------- */
+main > article:nth-of-type(1) {
+    position: relative;
+    height: 40em;
+    width: auto;
+    aspect-ratio: 1 / 3.25;
+    font-size: calc(var(--pepsi-bottle) * 0.025px);
+}
+main > article:nth-of-type(1) > section:nth-of-type(1) {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: var(--color-dark);
+    height: 1.45em;
+    aspect-ratio: 4.35 / 1;
+    /* opacity: 0.5; */
+    clip-path: url('#cap-clip-path');
+    z-index: 2;
+}
+main > article:nth-of-type(1) > section:nth-of-type(2) {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-lightgray);
+    /* opacity: 0.5; */
+    clip-path: url('#bottle-clip-path');
+    z-index: 1;
+}
+main > article:nth-of-type(1) > section:nth-of-type(2) > section {
+    position: absolute;
+    top: 14.55%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-dark);
+    height: 41.35%;
+    aspect-ratio: 1 / 1.7;
+    display: flex;
+    flex-direction: column;
+    clip-path: url('#label-clip-path');
+    
+}
+main > article:nth-of-type(1) > section:nth-of-type(2) > section img:first-of-type {
+    margin-top: 14.5%;
+    height: 37%;
+}
+main > article:nth-of-type(1) > section:nth-of-type(2) > section img:last-of-type {
+    margin-top: 6%;
+    height: 17.5%;
+}
+
+
+
+
+
+
+
+
+
+/* @media only screen and (orientation:landscape){
+    body {
+        background-color: red;
+    }
+} */
