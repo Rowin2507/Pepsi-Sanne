@@ -49,13 +49,18 @@ main {
     height: 100%;
     width: 100%;
 }
-
 .not-visible {
     position: absolute;
     opacity: 0;
     z-index: -999;
     pointer-events: none;
 }
+
+button {
+    position: absolute;
+    bottom: 50px;
+}
+
 
 
 
