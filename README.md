@@ -1,2 +1,2 @@
 # Pepsi-Sanne
-Een hopelijk leuk bedankje, voor het lenen van uw laptop 😊
+Een klein gebaar als bedankje, voor het lenen van uw laptop. Proost! 😄
