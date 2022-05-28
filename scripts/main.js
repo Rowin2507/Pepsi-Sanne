@@ -52,7 +52,7 @@ if ( location.protocol != "https:" ) {
                 // (optional) Do something after API prompt dismissed.
                 if ( response == "granted" ) {
                     window.addEventListener( "devicemotion", (e) => {
-                        // do something for 'e' here.
+                        // do something for 'e' here.....
                         
                         var x = e.accelerationIncludingGravity.x;
                         var y = e.accelerationIncludingGravity.y;
