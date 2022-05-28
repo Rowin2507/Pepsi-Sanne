@@ -43,7 +43,7 @@
 
 if ( location.protocol != "https:" ) {
     location.href = "https:" + window.location.href.substring( window.location.protocol.length );
-    }
+} else {
     function permission () {
         if ( typeof( DeviceMotionEvent ) !== "undefined" && typeof( DeviceMotionEvent.requestPermission ) === "function" ) {
             // (optional) Do something before API request prompt.
@@ -53,7 +53,17 @@ if ( location.protocol != "https:" ) {
                 if ( response == "granted" ) {
                     window.addEventListener( "devicemotion", (e) => {
                         // do something for 'e' here.
-                        alert("yeyyyyyy");
+                        
+                        var x = e.accelerationIncludingGravity.x;
+                        var y = e.accelerationIncludingGravity.y;
+                        var z = e.accelerationIncludingGravity.z;
+
+                        document.querySelector("div p:nth-of-type(1)").innerHTML = x;
+                        document.querySelector("div p:nth-of-type(2)").innerHTML = y;
+                        document.querySelector("div p:nth-of-type(3)").innerHTML = z;
+
+
+
                     })
                 }
             })
@@ -64,3 +74,5 @@ if ( location.protocol != "https:" ) {
     }
     const btn = document.getElementById( "request" );
     btn.addEventListener( "click", permission );
+
+}
