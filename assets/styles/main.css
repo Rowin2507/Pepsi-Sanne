@@ -1,13 +1,17 @@
 /* VARIABLES -------------------------------- */
 /* VARIABLES -------------------------------- */
 :root {
-     --pepsi-bottle: 500;
+    --pepsi-bottle: 500;
+    --device-rotation-x: 0;
+    --device-rotation-x-reversed: 10;
 
     --color-white: #FFFFFF;
     --color-lightgray: #eeeded;
     --color-black: #000000;
     --color-dark: #0d1010;
 }
+
+/* #1d1919 */
 
 
 
@@ -39,9 +43,16 @@ body > img {
 body {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: sans-serif;
+    background-color: #262628;
 }
+body.rotate-locked {
+    background-color: var(--color-white);
+}
+
+
+
 
 main {
     display: grid;
@@ -49,13 +60,18 @@ main {
     height: 100%;
     width: 100%;
 }
-
 .not-visible {
     position: absolute;
     opacity: 0;
     z-index: -999;
     pointer-events: none;
 }
+
+body > div {
+    position: absolute;
+    bottom: 50px;
+}
+
 
 
 
@@ -81,17 +97,23 @@ main > article:nth-of-type(1) > section:nth-of-type(1) {
     z-index: 2;
 }
 main > article:nth-of-type(1) > section:nth-of-type(2) {
+    height: 100%;
+    width: 100%;
+    /* filter: drop-shadow(1em 1em 1em red); */
+}
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) {
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: var(--color-lightgray);
+    /* background-color: var(--color-lightgray); */
+    background-color: rgb(255 255 255 / 0.15);
     /* opacity: 0.5; */
     clip-path: url('#bottle-clip-path');
     z-index: 1;
 }
-main > article:nth-of-type(1) > section:nth-of-type(2) > section {
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(2) {
     position: absolute;
-    top: 14.55%;
+    top: 14.25%;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-dark);
@@ -100,18 +122,45 @@ main > article:nth-of-type(1) > section:nth-of-type(2) > section {
     display: flex;
     flex-direction: column;
     clip-path: url('#label-clip-path');
-    
+    opacity: 0.9;
+    z-index: 3;
 }
-main > article:nth-of-type(1) > section:nth-of-type(2) > section img:first-of-type {
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(2) img:first-of-type {
     margin-top: 14.5%;
     height: 37%;
 }
-main > article:nth-of-type(1) > section:nth-of-type(2) > section img:last-of-type {
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(2) img:last-of-type {
     margin-top: 6%;
     height: 17.5%;
 }
 
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) {
+    position: absolute;
+    left: 50%;
+    /* top: 95%; */
+    top: 50%;
+    /* transform: translateX(-50%); */
+    background-color: #552020;
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    z-index: -1;
 
+    transform: translate(calc(-50% + (var(--device-rotation-x) * -2.1em)), calc(-50% + (var(--device-rotation-x-reversed) * 1.25em))) rotate(calc(var(--device-rotation-x) * 9.25deg));
+    /* transform-origin: center; */
+    /* transition: transform 25ms; */
+}
+body.rotate-locked main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) {
+    transform: translate(calc(-50% + (9 * -2.1em)), -50%) rotate(90deg);
+    transition: 250ms;
+}
+
+main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(2) {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(270deg, rgba(29,25,25,1) 10%, rgba(29,25,25,0.5004595588235294) 30%, rgba(29,25,25,0.09989933473389356) 40%, rgba(29,25,25,0) 45%, rgba(29,25,25,0) 55%, rgba(29,25,25,0.10270045518207283) 60%, rgba(29,25,25,0.5032606792717087) 70%, rgba(29,25,25,1) 90%); */
+    background: linear-gradient(270deg, rgba(29,25,25,0.75) 10%, rgba(29,25,25,0.45284051120448177) 30%, rgba(29,25,25,0.09989933473389356) 40%, rgba(29,25,25,0) 45%, rgba(29,25,25,0) 55%, rgba(29,25,25,0.10270045518207283) 60%, rgba(29,25,25,0.44723827030812324) 70%, rgba(29,25,25,0.75) 90%);
+    box-shadow: inset 0 -6.5em 4em 1em #1d1919;
+}
 
 
 
