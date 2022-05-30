@@ -92,30 +92,6 @@ var body = document.querySelector("body");
 
                         fluidCola.style.setProperty("--device-rotation-x-reversed", tiltDeviceXReversed);
 
-                        // if (tiltDeviceXRounded == "0") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "1") {
-                        //     tiltDeviceXReversed = 9;
-                        // } if (tiltDeviceXRounded == "2") {
-                        //     tiltDeviceXReversed = 8;
-                        // } if (tiltDeviceXRounded == "3") {
-                        //     tiltDeviceXReversed = 7;
-                        // } if (tiltDeviceXRounded == "4") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "5") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "6") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "7") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "8") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "9") {
-                        //     tiltDeviceXReversed = 10;
-                        // } if (tiltDeviceXRounded == "10") {
-                        //     tiltDeviceXReversed = 10;
-                        // }
-
 
                         if (tiltDeviceX <= -9.5) {
                             body.classList.add("rotate-locked");
