@@ -40,9 +40,9 @@
 
 // window.addEventListener("devicemotion", handleMotionEvent, true);
 
-var fluidCola = document.querySelector("main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1)");
-fluidCola.style.setProperty("--device-rotation-x", "0");
-fluidCola.style.setProperty("--device-rotation-x-reversed", "10");
+// var fluidCola = document.querySelector("main > article:nth-of-type(1) > section:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1)");
+// fluidCola.style.setProperty("--device-rotation-x", "0");
+// fluidCola.style.setProperty("--device-rotation-x-reversed", "10");
 
 
 
@@ -63,6 +63,11 @@ var body = document.querySelector("body");
                 if ( response == "granted" ) {
                     window.addEventListener( "devicemotion", (e) => {
                         // do something for 'e' here.
+                        // body.requestFullScreen();
+                        
+                        window.scrollTo(0,1)
+                        
+                        body.classList.add("rotate-allowed");
                         
                         // alert( "DeviceMotionEvent is defined" );
                         var DetailedtiltDeviceX = e.accelerationIncludingGravity.x;
