@@ -17,5 +17,5 @@ Voor als u wilt weten welke bronnen ik heb gebruikt, bij deze.
 - https://gist.github.com/prof3ssorSt3v3/edb2632a362b3731274cfab84e9973f9
 - https://stackoverflow.com/questions/58802767/no-proceed-anyway-option-on-neterr-cert-invalid-in-chrome-on-macos
 
-<hr>
-**Rowin Schmidt - 2022** 
+
+###### Rowin Schmidt - 2022
