@@ -16,3 +16,6 @@ Voor als u wilt weten welke bronnen ik heb gebruikt, bij deze.
 - https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari
 - https://gist.github.com/prof3ssorSt3v3/edb2632a362b3731274cfab84e9973f9
 - https://stackoverflow.com/questions/58802767/no-proceed-anyway-option-on-neterr-cert-invalid-in-chrome-on-macos
+
+
+**Rowin Schmidt - 2022** 
