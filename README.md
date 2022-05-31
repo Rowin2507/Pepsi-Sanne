@@ -1,4 +1,4 @@
-# Pepsi-Sanne
+# Pepsi bedankje voor Sanne
 Een klein gebaar als bedankje voor het lenen van uw laptop. Proost! 😄
 
 
