@@ -13,6 +13,8 @@ Alles is gemaakt met HTML, CSS en JavaScript. De basale vormen zijn via clip-pat
 
 ## 🗒 Bronnen
 Voor als u wilt weten welke bronnen ik heb gebruikt, bij deze.
+- https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent
+- https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/acceleration
 - https://stackoverflow.com/questions/56514116/how-do-i-get-deviceorientationevent-and-devicemotionevent-to-work-on-safari
 - https://gist.github.com/prof3ssorSt3v3/edb2632a362b3731274cfab84e9973f9
 - https://stackoverflow.com/questions/58802767/no-proceed-anyway-option-on-neterr-cert-invalid-in-chrome-on-macos
