@@ -10,7 +10,7 @@ Een klein gebaar als bedankje voor het lenen van uw laptop. Proost! 😄
 ## 💻 Uitwerking
 Alles is gemaakt met HTML, CSS en JavaScript. De basale vormen zijn via clip-paths gemaakt in illustrator en omgezet naar SVG. Ik kreeg het alleen niet helemaal voor elkaar met relatieve clip-paths in CSS-only zonder SVG tag in HTML helaas.. Misschien de volgende keer eens wat verder in verdiepen. Het werkte wel met simpele vormen, maar niet met de complexere paths die ik heb gemaakt. Mogelijk dat het daar fout gaat 😁
 
-Voor nu nog alleen werkend op iOS door het gebruik van een speciale JavaScript trigger, die alleen in iOS wordt ondersteund. Hier moet je namelijk expliciet toestemming geven om gebruik te kunnen maken van de bewegingssensoren. Op Android is dit niet het geval, maar dan moet ik de functie iets anders schrijven. Echter zal dat nog worden aangepast, aangezien ik voor de eindopdracht van VID ook gebruik zal maken van deze sensoren en het is dan wel zo fijn als het ook op Android werkt 😇. Dat komt dus later!
+Voor nu nog alleen werkend op iOS door het gebruik van een speciale JavaScript trigger, die alleen in iOS wordt ondersteund. Hier moet je namelijk expliciet toestemming geven om gebruik te kunnen maken van de bewegingssensoren. Op Android is dit niet het geval, maar dan moet ik de functie iets anders moeten schrijven. Echter zal dat nog worden aangepast, aangezien ik voor de eindopdracht van VID ook gebruik zal maken van deze sensoren en het is dan wel zo fijn als het ook op Android werkt 😇. Dat komt dus later!
 
 
 ## 🗒 Bronnen
