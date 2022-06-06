@@ -58,7 +58,7 @@ body::after {
     height: 100%;
     width: 100%;
     background-color: transparent;
-    background-image: url("/assets/images/pepsi-logo-white.svg");
+    background-image: url("../images/pepsi-logo-white.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
